@@ -1,0 +1,102 @@
+.head {
+  background-color: #f99f00;
+  opacity: .90; 
+}
+
+.b-btn {
+  background-color: #f99f00;
+}
+
+.b-btn:hover {
+  background-color: #056139;
+}
+
+.button {
+  background-color: #f99f00;
+}
+
+.button:hover {
+  background-color: #056139;
+}
+
+/*Вернуться к списку уроков*/
+a {
+  color: #f99f00;
+}
+
+/* фон аудиоплеера */
+.mejs__container {
+background-color: #056139;
+opacity: .90;
+}
+
+/* ползунок скорости аудиоплеера */
+.mejs__container .mejs__horizontal-volume-current {
+  background-color: #f99f00;
+}
+
+/* ползунок проуслушанной части аудиоплеера */
+.mejs__time-current {
+  background-color: #f99f00;
+}
+
+/* кнопки оформить текст */
+.b-btn_light, .button_light {
+    color: #ffffff;
+}
+
+.b-btn_blank.b-btn_light:hover, .b-btn_blank.button_light:hover, .button_blank.b-btn_light:hover, .button_blank.button_light:hover {
+  background-color: #056139;
+}
+
+.b-btn_light:hover, .button_light:hover {
+color: #ffffff;
+}
+
+/* кнопка Забыли пароль */
+.button_blank {
+  color: #000000;
+}
+
+.button_blank:hover {
+  color: #ffffff;
+}
+
+
+/* название курса в папке курсов */
+.allcourses-grid__title a {
+  color: #000000;
+}
+
+/* кнопка изучу позже */
+.buttonsReversed .jqi .jqibuttons .button-wrap button, .jqi .jqibuttons .button-wrap.val-false button {
+  background-color: #f99f00;
+  color: #000000;
+}
+.buttonsReversed .jqi .jqibuttons .button-wrap button:hover, .jqi .jqibuttons .button-wrap.val-false button:hover {
+  background-color: #056139;
+  color: #ffffff;
+}
+
+/* кнопка изучил */
+
+.jqi .jqibuttons .button-wrap button {
+  background-color: #f99f00!important;
+  color: #ffffff;
+}
+.jqi .jqibuttons .button-wrap button:hover {
+  background-color: #056139;
+  color: #000000;
+}
+
+/* неактивная кнопка Далее */
+.b-btn.disabled, .b-btn.disabled:hover, .b-btn:disabled, .b-btn:disabled:hover, .button.disabled, .button.disabled:hover, .button:disabled, .button:disabled:hover {
+  background-color: #056139;
+  color: #ffffff;
+}
+
+/* статус и номер нового урока (надпись Новый) */
+.status_inqueue {
+    background: #f99f00;
+    color: #ffffff;
+}
