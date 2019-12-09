@@ -1,7 +1,361 @@
+/*-------------------------*/
+/* Общее оформление сайта*/
+/*-------------------------*/
+/*верхняя панель*/
 .head {
   background-color: #f99f00;
   opacity: .90; 
 }
+
+/* подложка */
+body, html {
+  background-color: #ffffff;
+}
+
+/* навбар */
+/* меню */
+.nav a {
+  color: #E39000;
+}
+
+.nav a:hover {
+  color: #ffffff;
+  background-color: #FCD38B;
+}
+
+/* скрол */
+::-webkit-scrollbar-thumb {
+  background-color:#FCDBA2
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #D1E2DB;
+}
+
+/*-------------------------*/
+/* Форма login */
+/*-------------------------*/
+/* кнопка Забыли пароль */
+.button_blank {
+  color: #000000;
+}
+
+.button_blank:hover {
+  color: #ffffff;
+}
+
+/*-------------------------*/
+/* Сцена папка с курсами */
+/*-------------------------*/
+
+/* расположение списком*/
+/* название курса */
+.allcourses-list__title a {
+  color: #056139;
+  font-weight: bold;
+}
+
+/* статус последнего выполненного урока */
+/* незачет */
+.courses-list-nav__status--rejected {
+    background-color: #FAAF2E;
+    color: #ffffff;
+}
+
+/* зачет */
+.courses-list-nav__status--accepted {
+    background-color: #327D5D;
+    color: #ffffff;
+}
+
+/* на проверке */
+.courses-list-nav__status--oncheck {
+    background-color: #8DB7A5;
+    color: #ffffff;
+}
+
+/* новое */
+.courses-list-nav__status--inqueue {
+    background-color: #FCD38B;
+    color: #ffffff;
+}
+
+
+/* расположение мозаикой*/
+/* название курса */
+.allcourses-grid__title a {
+  color: #056139;
+  font-weight: bold;
+}
+
+/* номер последнего выполненного урока */
+.courses-grid-nav-info__lesson {
+  color: #ffffff;
+}
+
+/* затемнение на лого курса */
+.courses-grid-nav {
+  background-color: #171717;
+  opacity: .75;
+}
+
+/* статус последнего выполненного урока */
+/* незачет */
+.courses-grid-nav-info__status--rejected {
+    background-color: #FAAF2E;
+    color: #ffffff;
+}
+/* незачет */
+.courses-grid-nav-info__status--accepted {
+  background-color: #327D5D;
+  color: #ffffff;
+}
+
+/* на проверке */
+.courses-grid-nav-info__status--oncheck {
+  background-color:#8DB7A5;
+  color: #ffffff;
+}
+
+/* новое */
+.courses-grid-nav-info__status--inqueue {
+    background: #FCD38B;
+    color: #ffffff;
+}
+
+/*-------------------------*/
+/* Сцена Уроки */
+/*-------------------------*/
+
+/* прогресс-бар по курсу */
+/* шкала пройденной части */
+.green .progressbar__bar .current {
+    background-color: #FAAF2E !important;
+}
+
+/* непройденная часть */
+.progressbar__bar:before {
+  background-color: #FCDBA2;
+}
+
+/*  из  */
+.progressbar__post {
+  color: #000000;
+}
+
+/* Уроков*/
+.progressbar {
+  color: #000000;
+}
+
+/*граница блоков*/
+/* блок курса*/
+.block {
+   border: #A4C5B7 1px solid;
+} 
+
+/* блок тем */
+.content-block {
+  border: #A4C5B7 1px solid;
+}
+
+/* разделитель внутри уроков */
+.lessons__list__item:after, .lessons__list__item:before {
+  background: #A4C5B7;
+}
+
+/* Кол-во уроков в блоке */
+.lessons__theme__lessons {
+  color: #000000;
+/*   font-weight: bold; */
+  font-size: 15px;
+}
+
+/* название урока */
+.js-status {
+  color: #000000;
+}
+
+/* статусы по урокам в текущей сцене, статусы и номера уроков внутри каждого урока */
+/* на проверке */
+.status_oncheck {
+  background-color:#8DB7A5;
+  color: #ffffff;
+}
+/* зачет */
+.status_accepted {
+  background-color: #327D5D;
+  color: #ffffff;
+}
+
+/* новое */
+.status_inqueue {
+    background: #FCD38B;
+    color: #ffffff;
+}
+
+/* незачет */
+.status_rejected {
+    background-color: #FAAF2E;
+    color: #ffffff;
+}
+
+/* статус недоступно */
+.block__head__panel__status.colored.status_ {
+    background-color: #B9B9B9;
+    color: #ffffff;
+}
+
+/*-------------------------*/
+/* Общие компоненты уроков */
+/*-------------------------*/
+/* Блок задание */
+/*граница блока*/
+.aside-right .content-block .rmenu {
+      border: #A4C5B7 1px solid;
+}
+
+/* фон */
+.react.tags .Select-option: .rmenu__item.active, .rmenu__item:hover {
+  background-color: #E8F0ED;
+}
+
+/*черта у вкладки задание*/
+/* если сверху */
+@media screen and (max-width: 1199px){.aside-right .content-block .rmenu__item.active {
+    border-bottom: 2px solid #056139;
+}}
+
+/* если сбоку */
+.rmenu__item.active {
+  border-left: 2px solid #056139;
+}
+
+/* номер вопроса в кружочке */
+.b-question .b-question__sort_number {
+  background-color: #056139;
+  color: #FFFFFF;
+}
+
+/* кружок Мой отчет */
+.block__circle.colored {
+    background-color: #327D5D;
+    color: #ffffff;
+}
+
+/* кружок с номером урока - цвет в зависимости от статуса */
+/* зачет */
+.block__circle.colored.status_rejected {
+    background-color: #FAAF2E;
+}
+
+.block__circle.colored.status_accepted {
+    background-color: #327D5D;
+}
+
+.block__circle.colored.status_oncheck {
+    background-color: #8DB7A5;
+}
+
+.block__circle.colored.status_inqueue {
+    background-color: #FCD38B;
+}
+
+/* Сообщение, всплывающее, если зашел в урок и не отметил его как выполненный */
+/* Заголовок */
+div.jqi div.jqititle {
+  background-color: #FEF6E7
+}
+
+/* обводка контейнера */
+div.jqi div.jqibuttons, div.jqi div.jqimessage {
+  border: 1px solid #FDE4B9!important;
+}
+
+/* кнопка изучу позже */
+.buttonsReversed .jqi .jqibuttons .button-wrap button, .jqi .jqibuttons .button-wrap.val-false button {
+  background-color: #F99F00 !important;
+ color: #ffffff !important
+}
+
+.buttonsReversed .jqi .jqibuttons .button-wrap button:hover, .jqi .jqibuttons .button-wrap.val-false button:hover {
+  background-color: #056139 !important;
+ color: #ffffff !important
+}
+
+/* кнопка изучил */
+.jqi .jqibuttons .button-wrap button {
+  background-color: #f99f00!important;
+  color: #ffffff;
+}
+
+.jqi .jqibuttons .button-wrap button:hover {
+  background: #056139 !important;
+  color: #ffffff !important;
+}
+
+.jqi .jqibuttons .button-wrap button:focus {
+  border: 1.2px solid #056139!important;
+  outline:0 none !important;
+}
+
+
+/*-------------------------*/
+/*Сцены уроков по видам */
+/*-------------------------*/
+
+/*-------------------------*/
+/* Урок аудио */
+/*-------------------------*/
+
+/* Аудиоплееер */
+/* Скроллы */
+.mejs__container .mejs__horizontal-volume-current, .mejs__container .mejs__time-current, .mejs__container .mejs__time-hovered {
+      background: #056139;
+}
+
+/* фон аудиоплеера */
+.mejs__container {
+  background-color: #8DB7A5;
+}
+
+/*-------------------------*/
+/* Урок Слово-перевод */
+/*-------------------------*/
+
+/* левый столбец слов */
+/* фон */
+.block .b-question__option__dropfield {
+ background-color: #327D5D;
+}
+
+/* слова */
+.block .b-question__option__dropfield li {
+  background-color: #327D5D;
+  color: #ffffff;
+}
+
+/*
+ правый столбец слов */
+/* фон */
+.block .b-question__option__dropfield_b {
+  background-color:#FAB02E;
+}
+
+/* слова */
+.block .b-question__option__dropfield_b li {
+  background-color:#FAB02E;
+  color: #ffffff;
+}
+
+/*варианты для перетаска */
+.block .b-question__options__half.fl-r li {
+   background-color: #FAB02E;
+   color: #ffffff;
+}
+
+/*-------------------------*/
+/* Кнопки */
+/*-------------------------*/
 
 .b-btn {
   background-color: #f99f00;
@@ -19,27 +373,6 @@
   background-color: #056139;
 }
 
-/*Вернуться к списку уроков*/
-a {
-  color: #f99f00;
-}
-
-/* фон аудиоплеера */
-.mejs__container {
-background-color: #056139;
-opacity: .90;
-}
-
-/* ползунок скорости аудиоплеера */
-.mejs__container .mejs__horizontal-volume-current {
-  background-color: #f99f00;
-}
-
-/* ползунок проуслушанной части аудиоплеера */
-.mejs__time-current {
-  background-color: #f99f00;
-}
-
 /* кнопки оформить текст */
 .b-btn_light, .button_light {
     color: #ffffff;
@@ -53,50 +386,23 @@ opacity: .90;
 color: #ffffff;
 }
 
-/* кнопка Забыли пароль */
-.button_blank {
-  color: #000000;
-}
-
-.button_blank:hover {
-  color: #ffffff;
-}
-
-
-/* название курса в папке курсов */
-.allcourses-grid__title a {
-  color: #000000;
-}
-
-/* кнопка изучу позже */
-.buttonsReversed .jqi .jqibuttons .button-wrap button, .jqi .jqibuttons .button-wrap.val-false button {
-  background-color: #f99f00;
-  color: #000000;
-}
-.buttonsReversed .jqi .jqibuttons .button-wrap button:hover, .jqi .jqibuttons .button-wrap.val-false button:hover {
-  background-color: #056139;
-  color: #ffffff;
-}
-
-/* кнопка изучил */
-
-.jqi .jqibuttons .button-wrap button {
-  background-color: #f99f00!important;
-  color: #ffffff;
-}
-.jqi .jqibuttons .button-wrap button:hover {
-  background-color: #056139;
-  color: #000000;
-}
-
 /* неактивная кнопка Далее */
 .b-btn.disabled, .b-btn.disabled:hover, .b-btn:disabled, .b-btn:disabled:hover, .button.disabled, .button.disabled:hover, .button:disabled, .button:disabled:hover {
   background-color: #056139;
   color: #ffffff;
 }
 
-/* статус и номер нового урока (надпись Новый) */
-.status_inqueue {
-    background: #f99f00;
-    color: #ffffff;
+.button_lighter {
+  background-color: #f99f00;
+  color: #ffffff;
 }
+
+.b-btn_lighter:hover, .button_lighter:hover {
+  background-color: #056139;
+  color: #ffffff;
+}
+
+.b-btn_lighter, .button_lighter {
+  color: #ffffff
+}
+
